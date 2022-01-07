@@ -13,6 +13,7 @@
 		43D2FB692787726B001E11F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D2FB672787726B001E11F0 /* Main.storyboard */; };
 		43D2FB6B2787726D001E11F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43D2FB6A2787726D001E11F0 /* Assets.xcassets */; };
 		43D2FB6E2787726D001E11F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D2FB6C2787726D001E11F0 /* LaunchScreen.storyboard */; };
+		43E5BB772787AC80007F677A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E5BB762787AC80007F677A /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		43D2FB6A2787726D001E11F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43D2FB6D2787726D001E11F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43D2FB6F2787726D001E11F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E5BB762787AC80007F677A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		43D2FB602787726B001E11F0 /* HomeWorkLesson2.4 */ = {
 			isa = PBXGroup;
 			children = (
-				43D2FB612787726B001E11F0 /* AppDelegate.swift */,
-				43D2FB632787726B001E11F0 /* SceneDelegate.swift */,
-				43D2FB652787726B001E11F0 /* ViewController.swift */,
-				43D2FB672787726B001E11F0 /* Main.storyboard */,
-				43D2FB6A2787726D001E11F0 /* Assets.xcassets */,
-				43D2FB6C2787726D001E11F0 /* LaunchScreen.storyboard */,
-				43D2FB6F2787726D001E11F0 /* Info.plist */,
+				43E5BB752787AA6C007F677A /* Models */,
+				43E5BB712787A228007F677A /* ViewControllers */,
+				43E5BB722787A298007F677A /* Storyboards */,
+				43E5BB742787A8CA007F677A /* App */,
+				43E5BB732787A8B0007F677A /* Resources */,
 			);
 			path = HomeWorkLesson2.4;
+			sourceTree = "<group>";
+		};
+		43E5BB712787A228007F677A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43D2FB652787726B001E11F0 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		43E5BB722787A298007F677A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				43D2FB672787726B001E11F0 /* Main.storyboard */,
+				43D2FB6C2787726D001E11F0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		43E5BB732787A8B0007F677A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43D2FB6A2787726D001E11F0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		43E5BB742787A8CA007F677A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				43D2FB612787726B001E11F0 /* AppDelegate.swift */,
+				43D2FB632787726B001E11F0 /* SceneDelegate.swift */,
+				43D2FB6F2787726D001E11F0 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		43E5BB752787AA6C007F677A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43E5BB762787AC80007F677A /* Question.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43D2FB662787726B001E11F0 /* ViewController.swift in Sources */,
+				43E5BB772787AC80007F677A /* Question.swift in Sources */,
 				43D2FB622787726B001E11F0 /* AppDelegate.swift in Sources */,
 				43D2FB642787726B001E11F0 /* SceneDelegate.swift in Sources */,
 			);
@@ -291,7 +335,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q5RV2AMVQ8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeWorkLesson2.4/Info.plist;
+				INFOPLIST_FILE = HomeWorkLesson2.4/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +363,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q5RV2AMVQ8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeWorkLesson2.4/Info.plist;
+				INFOPLIST_FILE = HomeWorkLesson2.4/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

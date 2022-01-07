@@ -226,6 +226,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n71-4d-UJg">
+                                <rect key="frame" x="0.0" y="96" width="375" height="4"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09s-Gm-Xlm">
+                                <rect key="frame" x="16" y="108" width="343" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5h9-pb-b5M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -240,14 +249,20 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="16"/>
                             </constraint>
                             <constraint firstItem="5h9-pb-b5M" firstAttribute="trailing" secondItem="QvS-ha-Aw1" secondAttribute="trailing" constant="16" id="AGk-HO-lbw"/>
+                            <constraint firstItem="n71-4d-UJg" firstAttribute="top" secondItem="5h9-pb-b5M" secondAttribute="top" id="K0H-GI-BPn"/>
+                            <constraint firstItem="n71-4d-UJg" firstAttribute="leading" secondItem="5h9-pb-b5M" secondAttribute="leading" id="KS2-Q8-N5t"/>
                             <constraint firstItem="5h9-pb-b5M" firstAttribute="trailing" secondItem="U4V-Ol-IBl" secondAttribute="trailing" constant="16" id="Lgm-5H-Hhg"/>
                             <constraint firstItem="U4V-Ol-IBl" firstAttribute="leading" secondItem="5h9-pb-b5M" secondAttribute="leading" constant="16" id="M9P-Hj-sXE"/>
+                            <constraint firstItem="09s-Gm-Xlm" firstAttribute="leading" secondItem="5h9-pb-b5M" secondAttribute="leading" constant="16" id="N55-th-93Z"/>
                             <constraint firstItem="5h9-pb-b5M" firstAttribute="trailing" secondItem="c9m-e4-nnd" secondAttribute="trailing" constant="16" id="PM5-YF-GXq"/>
                             <constraint firstItem="QvS-ha-Aw1" firstAttribute="leading" secondItem="5h9-pb-b5M" secondAttribute="leading" constant="16" id="UUa-ur-yTt"/>
+                            <constraint firstItem="n71-4d-UJg" firstAttribute="trailing" secondItem="5h9-pb-b5M" secondAttribute="trailing" id="dys-HY-6zA"/>
                             <constraint firstItem="c9m-e4-nnd" firstAttribute="centerY" secondItem="YCg-em-oAe" secondAttribute="centerY" id="g1e-8I-81x">
                                 <variation key="heightClass=compact-widthClass=compact" constant="16"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="16"/>
                             </constraint>
+                            <constraint firstItem="5h9-pb-b5M" firstAttribute="trailing" secondItem="09s-Gm-Xlm" secondAttribute="trailing" constant="16" id="krg-R2-EFx"/>
+                            <constraint firstItem="09s-Gm-Xlm" firstAttribute="top" secondItem="n71-4d-UJg" secondAttribute="bottom" constant="8" symbolic="YES" id="yZr-aR-2g2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="9PA-zA-ASf">
@@ -263,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMG-5T-KLU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1450" y="69"/>
+            <point key="canvasLocation" x="1448.8" y="68.815592203898049"/>
         </scene>
         <!--Результат-->
         <scene sceneID="rxI-FZ-g4d">
