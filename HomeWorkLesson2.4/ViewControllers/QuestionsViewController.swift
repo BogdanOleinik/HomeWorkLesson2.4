@@ -65,7 +65,6 @@ class QuestionsViewController: UIViewController {
         }
         
         nextQuestion()
-        
     }
     
     @IBAction func rangeAnswerButtonPressed() {
